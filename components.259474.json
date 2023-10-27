@@ -1,0 +1,185 @@
+{
+  "components": [
+    {
+      "name": "button",
+      "display_name": null,
+      "created_at": "2023-10-27T13:47:52.883Z",
+      "updated_at": "2023-10-27T13:47:52.883Z",
+      "id": 4796222,
+      "schema": {},
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "button",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "feature",
+      "display_name": null,
+      "created_at": "2023-10-27T12:43:05.905Z",
+      "updated_at": "2023-10-27T12:43:05.905Z",
+      "id": 4795843,
+      "schema": {
+        "name": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "feature",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "grid",
+      "display_name": null,
+      "created_at": "2023-10-27T12:43:05.891Z",
+      "updated_at": "2023-10-27T12:43:05.891Z",
+      "id": 4795842,
+      "schema": {
+        "columns": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "grid",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "movie",
+      "display_name": null,
+      "created_at": "2023-10-27T15:08:51.785Z",
+      "updated_at": "2023-10-27T16:49:57.932Z",
+      "id": 4796624,
+      "schema": {
+        "title": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "movie",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "movieCarousel",
+      "display_name": "Movie Carousel",
+      "created_at": "2023-10-27T13:45:13.845Z",
+      "updated_at": "2023-10-27T15:09:58.084Z",
+      "id": 4796197,
+      "schema": {
+        "movies": {
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "movie"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Movie Carousel",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "page",
+      "display_name": null,
+      "created_at": "2023-10-27T12:43:05.857Z",
+      "updated_at": "2023-10-27T12:43:05.857Z",
+      "id": 4795840,
+      "schema": {
+        "body": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "page",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "showcase",
+      "display_name": null,
+      "created_at": "2023-10-27T13:44:45.393Z",
+      "updated_at": "2023-10-27T13:44:45.393Z",
+      "id": 4796174,
+      "schema": {},
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "showcase",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "teaser",
+      "display_name": null,
+      "created_at": "2023-10-27T12:43:05.876Z",
+      "updated_at": "2023-10-27T12:43:05.876Z",
+      "id": 4795841,
+      "schema": {
+        "headline": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "teaser",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    }
+  ]
+}

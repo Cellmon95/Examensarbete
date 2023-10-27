@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import { onMount } from 'svelte';
 	import { useStoryblokBridge, StoryblokComponent } from '@storyblok/svelte';
 
