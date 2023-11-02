@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@storyblok/svelte": "^3.1.6",
+		"@supabase/supabase-js": "^2.38.4",
 		"@vitejs/plugin-basic-ssl": "^1.0.1"
 	}
 }

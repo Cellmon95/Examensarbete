@@ -1,8 +1,9 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 
 	import { onMount } from 'svelte';
 	import { useStoryblokBridge, StoryblokComponent } from '@storyblok/svelte';
+	import { supabase } from '$lib/supabaseClient.js';
 
 	export let data;
 

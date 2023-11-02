@@ -3,6 +3,7 @@ import MovieCarousel from '../blocks/MovieCarousel.svelte';
 import Feature from '../blocks/Feature.svelte';
 import Page from '../blocks/Page.svelte';
 import Movie from '../blocks/Movie.svelte';
+import { supabase } from '$lib/supabaseClient';
 
 export async function load() {
 	storyblokInit({
@@ -20,7 +21,6 @@ export async function load() {
 	});
 
 	let storyblokApi = await useStoryblokApi();
-
 	return {
 		storyblokApi: storyblokApi
 	};
