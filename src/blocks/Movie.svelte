@@ -3,8 +3,9 @@
 	import type { MovieStoryblok } from '../component-types-sb';
 
 	export let blok: MovieStoryblok;
+	export let data;
 </script>
 
 <div use:storyblokEditable={blok}>
-	<h1>{blok.title}</h1>
+	<p>test</p>
 </div>

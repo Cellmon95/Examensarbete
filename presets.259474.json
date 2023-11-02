@@ -1,0 +1,118 @@
+{
+  "presets": [
+    {
+      "id": 1949346,
+      "name": "Jurassic Park",
+      "preset": {
+        "_uid": "6d85891b-a04b-420f-8c0e-7ee40e997216",
+        "title": "Jurassic Park",
+        "movieId": "1",
+        "component": "movie"
+      },
+      "component_id": 4796624,
+      "space_id": 259474,
+      "created_at": "2023-11-02T14:57:34.269Z",
+      "updated_at": "2023-11-02T14:57:34.269Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 1949345,
+      "name": "Openheimer",
+      "preset": {
+        "_uid": "df913d56-bd90-4f1b-b3ca-fb4a794b6045",
+        "title": "Openheimer",
+        "movieId": "3",
+        "component": "movie"
+      },
+      "component_id": 4796624,
+      "space_id": 259474,
+      "created_at": "2023-11-02T14:56:29.667Z",
+      "updated_at": "2023-11-02T14:56:29.667Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 1949344,
+      "name": "Terminator 2",
+      "preset": {
+        "_uid": "0bb0185b-5780-4bcd-9e45-d728ab525cf4",
+        "title": "Terminator 2",
+        "movieId": "2",
+        "component": "movie"
+      },
+      "component_id": 4796624,
+      "space_id": 259474,
+      "created_at": "2023-11-02T14:55:58.900Z",
+      "updated_at": "2023-11-02T14:55:58.900Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 1949320,
+      "name": "test",
+      "preset": {
+        "_uid": "b78c0ea2-df20-4b0f-912c-e05790f6a356",
+        "body": [
+          {
+            "_uid": "97f9681a-e7aa-4ed2-887c-0efe5a06606f",
+            "title": "The film",
+            "component": "movie"
+          },
+          {
+            "_uid": "a9d127a1-1cb5-4b36-adaa-00d042cf7de6",
+            "headline": "test",
+            "component": "teaser"
+          },
+          {
+            "_uid": "af0a5e2f-726c-4a60-a396-3a3d5dcc6159",
+            "movies": [
+              {
+                "_uid": "4746205f-c8aa-46eb-acc2-d85883b348a1",
+                "title": "Jurassic park",
+                "component": "movie"
+              },
+              {
+                "_uid": "0c7c47da-3aaf-4ce7-9b43-7d8c4847b95a",
+                "title": "Lion King",
+                "component": "movie"
+              },
+              {
+                "_uid": "78cda3fe-df15-48f0-8244-43eaa35a2cfb",
+                "title": "Terminator",
+                "component": "movie"
+              }
+            ],
+            "component": "movieCarousel"
+          },
+          {
+            "_uid": "7b57e38c-2ca2-401c-8cfd-9ce8127912e8",
+            "name": "Test",
+            "component": "header"
+          },
+          {
+            "_uid": "f093486f-826f-4ef6-b8b3-f181ce2c53cf",
+            "title": "Jurassic Park",
+            "movieId": "1",
+            "component": "movie"
+          }
+        ],
+        "component": "page"
+      },
+      "component_id": 4795840,
+      "space_id": 259474,
+      "created_at": "2023-11-02T14:37:56.261Z",
+      "updated_at": "2023-11-02T14:37:56.261Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    }
+  ]
+}

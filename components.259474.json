@@ -4,7 +4,7 @@
       "name": "button",
       "display_name": null,
       "created_at": "2023-10-27T13:47:52.883Z",
-      "updated_at": "2023-10-27T13:47:52.883Z",
+      "updated_at": "2023-10-30T15:31:51.043Z",
       "id": 4796222,
       "schema": {},
       "image": null,
@@ -16,37 +16,14 @@
       "preset_id": null,
       "real_name": "button",
       "component_group_uuid": null,
-      "color": null,
-      "icon": null
-    },
-    {
-      "name": "feature",
-      "display_name": null,
-      "created_at": "2023-10-27T12:43:05.905Z",
-      "updated_at": "2023-10-27T12:43:05.905Z",
-      "id": 4795843,
-      "schema": {
-        "name": {
-          "type": "text"
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "feature",
-      "component_group_uuid": null,
-      "color": null,
-      "icon": null
+      "color": "#395ece",
+      "icon": "block-arrow-pointer"
     },
     {
       "name": "grid",
       "display_name": null,
       "created_at": "2023-10-27T12:43:05.891Z",
-      "updated_at": "2023-10-27T12:43:05.891Z",
+      "updated_at": "2023-10-30T15:30:12.824Z",
       "id": 4795842,
       "schema": {
         "columns": {
@@ -62,17 +39,17 @@
       "preset_id": null,
       "real_name": "grid",
       "component_group_uuid": null,
-      "color": null,
-      "icon": null
+      "color": "#395ece",
+      "icon": "block-1-2block"
     },
     {
-      "name": "movie",
-      "display_name": null,
-      "created_at": "2023-10-27T15:08:51.785Z",
-      "updated_at": "2023-10-27T16:49:57.932Z",
-      "id": 4796624,
+      "name": "header",
+      "display_name": "Header",
+      "created_at": "2023-10-27T12:43:05.905Z",
+      "updated_at": "2023-10-30T15:31:14.521Z",
+      "id": 4795843,
       "schema": {
-        "title": {
+        "name": {
           "type": "text"
         }
       },
@@ -83,25 +60,88 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
+      "real_name": "Header",
+      "component_group_uuid": null,
+      "color": "#395ece",
+      "icon": "block-text-img-t-l"
+    },
+    {
+      "name": "movie",
+      "display_name": null,
+      "created_at": "2023-10-27T15:08:51.785Z",
+      "updated_at": "2023-11-02T14:28:43.006Z",
+      "id": 4796624,
+      "schema": {
+        "title": {
+          "type": "text"
+        },
+        "movieId": {
+          "type": "option",
+          "use_uuid": true,
+          "source": "internal",
+          "datasource_slug": "movies",
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 1949346,
+          "name": "Jurassic Park",
+          "component_id": 4796624,
+          "image": "",
+          "color": "",
+          "icon": "",
+          "description": ""
+        },
+        {
+          "id": 1949345,
+          "name": "Openheimer",
+          "component_id": 4796624,
+          "image": "",
+          "color": "",
+          "icon": "",
+          "description": ""
+        },
+        {
+          "id": 1949344,
+          "name": "Terminator 2",
+          "component_id": 4796624,
+          "image": "",
+          "color": "",
+          "icon": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
       "real_name": "movie",
       "component_group_uuid": null,
-      "color": null,
-      "icon": null
+      "color": "#395ece",
+      "icon": "block-image"
     },
     {
       "name": "movieCarousel",
       "display_name": "Movie Carousel",
       "created_at": "2023-10-27T13:45:13.845Z",
-      "updated_at": "2023-10-27T15:09:58.084Z",
+      "updated_at": "2023-10-30T15:27:10.527Z",
       "id": 4796197,
       "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
         "movies": {
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
             "movie"
-          ]
+          ],
+          "pos": 1
         }
       },
       "image": null,
@@ -113,14 +153,14 @@
       "preset_id": null,
       "real_name": "Movie Carousel",
       "component_group_uuid": null,
-      "color": null,
-      "icon": null
+      "color": "#395ece",
+      "icon": "block-table-2"
     },
     {
       "name": "page",
       "display_name": null,
       "created_at": "2023-10-27T12:43:05.857Z",
-      "updated_at": "2023-10-27T12:43:05.857Z",
+      "updated_at": "2023-10-30T15:28:44.591Z",
       "id": 4795840,
       "schema": {
         "body": {
@@ -132,18 +172,28 @@
       "is_root": true,
       "preview_tmpl": null,
       "is_nestable": false,
-      "all_presets": [],
+      "all_presets": [
+        {
+          "id": 1949320,
+          "name": "test",
+          "component_id": 4795840,
+          "image": "",
+          "color": "",
+          "icon": "",
+          "description": ""
+        }
+      ],
       "preset_id": null,
       "real_name": "page",
       "component_group_uuid": null,
-      "color": null,
-      "icon": null
+      "color": "#fbce41",
+      "icon": "block-doc"
     },
     {
       "name": "showcase",
       "display_name": null,
       "created_at": "2023-10-27T13:44:45.393Z",
-      "updated_at": "2023-10-27T13:44:45.393Z",
+      "updated_at": "2023-10-30T15:29:56.858Z",
       "id": 4796174,
       "schema": {},
       "image": null,
@@ -155,31 +205,8 @@
       "preset_id": null,
       "real_name": "showcase",
       "component_group_uuid": null,
-      "color": null,
-      "icon": null
-    },
-    {
-      "name": "teaser",
-      "display_name": null,
-      "created_at": "2023-10-27T12:43:05.876Z",
-      "updated_at": "2023-10-27T12:43:05.876Z",
-      "id": 4795841,
-      "schema": {
-        "headline": {
-          "type": "text"
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "teaser",
-      "component_group_uuid": null,
-      "color": null,
-      "icon": null
+      "color": "#395ece",
+      "icon": "block-table"
     }
   ]
 }

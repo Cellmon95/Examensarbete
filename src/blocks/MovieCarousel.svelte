@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { storyblokEditable } from '@storyblok/svelte';
+	import { StoryblokComponent, storyblokEditable } from '@storyblok/svelte';
 	import type { MovieCarouselStoryblok } from '../component-types-sb';
+	import Movie from './Movie.svelte';
 
 	export let blok: MovieCarouselStoryblok;
 </script>
@@ -9,7 +10,7 @@
 	<div>
 		{#if blok.movies !== undefined}
 			{#each blok.movies as movie}
-				<p>{movie.title}</p>
+				<StoryblokComponent blok={movie} />
 			{/each}
 		{/if}
 	</div>
