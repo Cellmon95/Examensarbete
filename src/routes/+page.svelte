@@ -10,10 +10,6 @@
 </script>
 
 <div>
-	{#each data.movies as movie}
-		<p>{movie.name}</p>
-	{/each}
-
 	{#if data.story}
 		<StoryblokComponent blok={data.story.content} />
 	{/if}
