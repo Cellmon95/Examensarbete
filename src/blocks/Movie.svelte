@@ -8,6 +8,8 @@
 	let movieData: any[] = [];
 
 	onMount(async () => {
+		console.log(blok.movieId);
+
 		try {
 			const { data, error } = await supabase.from('movie').select().eq('id', blok.movieId);
 			if (error) {

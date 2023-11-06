@@ -5,12 +5,31 @@
 
 body {
 	background-color: black;
+	margin: 0;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'OpenSans';
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
 
 h2 {
 	color: #fff;
 	font-family: 'OpenSans';
 	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+h3 {
+	color: #fff;
+	font-family: OpenSans;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;

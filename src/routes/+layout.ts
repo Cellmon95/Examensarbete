@@ -2,7 +2,8 @@ import { apiPlugin, storyblokInit, useStoryblokApi } from '@storyblok/svelte';
 import MovieCarousel from '../blocks/MovieCarousel.svelte';
 import Page from '../blocks/Page.svelte';
 import Movie from '../blocks/Movie.svelte';
-import { supabase } from '$lib/supabaseClient';
+import Showcase from '../blocks/Showcase.svelte';
+import AdBanner from '../blocks/AdBanner.svelte';
 
 export async function load() {
 	storyblokInit({
@@ -14,7 +15,9 @@ export async function load() {
 		components: {
 			page: Page,
 			movieCarousel: MovieCarousel,
-			movie: Movie
+			movie: Movie,
+			showcase: Showcase,
+			adBanner: AdBanner 
 		}
 	});
 
