@@ -1,7 +1,7 @@
 <script lang="ts">
 	// @ts-nocheck
 
-	import { storyblokEditable, StoryblokComponent} from '@storyblok/svelte';
+	import { storyblokEditable, StoryblokComponent } from '@storyblok/svelte';
 	import type { PageStoryblok } from '../component-types-sb';
 
 	export let blok: PageStoryblok;

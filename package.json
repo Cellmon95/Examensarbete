@@ -24,6 +24,7 @@
 		"prettier-plugin-svelte": "^2.10.1",
 		"storyblok-generate-ts": "^1.15.1",
 		"svelte": "^4.0.5",
+		"svelte-carousel": "^1.0.25",
 		"svelte-check": "^3.4.3",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
@@ -33,6 +34,10 @@
 	"dependencies": {
 		"@storyblok/svelte": "^3.1.6",
 		"@supabase/supabase-js": "^2.38.4",
-		"@vitejs/plugin-basic-ssl": "^1.0.1"
+		"@vitejs/plugin-basic-ssl": "^1.0.1",
+		"easy-reactive": "^1.0.4",
+		"lodash.clonedeep": "^4.5.0",
+		"lodash.get": "^4.4.2",
+		"lodash.isequal": "^4.5.0"
 	}
 }

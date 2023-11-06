@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('./fonts/OpenSans-VariableFont.ttf');
+}
+
+body {
+	background-color: black;
+}
+
+h2 {
+	color: #fff;
+	font-family: 'OpenSans';
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}

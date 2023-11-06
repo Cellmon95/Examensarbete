@@ -23,6 +23,12 @@
 
 <div use:storyblokEditable={blok}>
 	{#each movieData as movie}
-		<img src={movie.img_poster} alt={movie.name} width="200px" />
+		<img src={movie.img_poster} alt={movie.name} />
 	{/each}
 </div>
+
+<style>
+	img {
+		width: 130px;
+	}
+</style>
