@@ -6,6 +6,8 @@
 body {
 	background-color: black;
 	margin: 0;
+	color: #fff;
+	font-family: 'OpenSans';
 }
 
 h1 {
@@ -29,6 +31,31 @@ h2 {
 h3 {
 	color: #fff;
 	font-family: OpenSans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+label {
+	font-size: 20px;
+}
+
+input[type='text'] {
+	height: 24px;
+	outline: none;
+}
+
+input[type='submit'] {
+	width: 160px;
+	height: 44px;
+	background-color: red;
+	outline: none;
+	border-color: red;
+	border-radius: 20px;
+
+	color: #fff;
+	font-family: 'OpenSans';
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
