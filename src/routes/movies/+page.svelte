@@ -1,4 +1,6 @@
 <script>
+	import { StoryblokComponent } from '@storyblok/svelte';
+
 	export let data;
 </script>
 
