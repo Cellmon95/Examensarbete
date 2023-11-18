@@ -6,7 +6,6 @@ export async function load({ parent, data }) {
 	});
 
 	return {
-		...data,
 		story: dataStory.data.story
 	};
 }
