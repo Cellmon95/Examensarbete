@@ -37,6 +37,18 @@ h3 {
 	line-height: normal;
 }
 
+p {
+	color: #fff;
+	font-family: OpenSans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
 label {
 	font-size: 20px;
 }
@@ -47,7 +59,8 @@ input[type='password'] {
 	outline: none;
 }
 
-input[type='submit'] {
+input[type='submit'],
+button {
 	width: 160px;
 	height: 44px;
 	background-color: red;
@@ -61,4 +74,9 @@ input[type='submit'] {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }

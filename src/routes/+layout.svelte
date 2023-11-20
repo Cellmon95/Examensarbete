@@ -16,14 +16,22 @@
 				invalidate('supabase:auth');
 			}
 		});
-
+		console.log(session);
 		return () => subscription.unsubscribe();
 	});
 </script>
 
 <header>
 	<div class="auth-link">
-		<span class="material-symbols-outlined"> login </span>
+		{#if session}
+			<a href="/account">
+				<span class="material-symbols-outlined"> account_circle </span>
+			</a>
+		{:else}
+			<a href="/login">
+				<span class="material-symbols-outlined"> login </span>
+			</a>
+		{/if}
 	</div>
 </header>
 
