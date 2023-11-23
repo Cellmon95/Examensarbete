@@ -2,14 +2,19 @@
 	import MovieShowcase from '../../../components/MovieShowcase.svelte';
 	import Carousel from 'svelte-carousel';
 	import { browser } from '$app/environment';
+	import { goto } from '$app/navigation';
 
 	export let data;
+
+	function onBook() {
+		goto('/buy/' + data.slug);
+	}
 </script>
 
 <MovieShowcase title={data.movieData?.name || ''} imgURL={data.movieData?.showcase_img || ''} />
 
 <section class="button-section">
-	<button> Boka </button>
+	<button on:click={onBook}> Boka </button>
 </section>
 
 <section class="carousel-section">

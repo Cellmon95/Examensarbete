@@ -22,6 +22,11 @@
 </script>
 
 <header>
+	<div class="home-link">
+		<a href="/">
+			<span class="material-symbols-outlined"> home </span>
+		</a>
+	</div>
 	<div class="auth-link">
 		{#if session}
 			<a href="/account">
@@ -44,14 +49,17 @@
 </footer>
 
 <style>
-	.auth-link {
+	header {
 		display: flex;
-		justify-content: right;
+		justify-content: space-between;
 		align-items: center;
-
 		height: 40px;
 		background-color: red;
 		padding: 20px;
+	}
+
+	.home-link span {
+		font-size: 40px;
 	}
 
 	.auth-link span {

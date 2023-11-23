@@ -25,7 +25,9 @@
 
 <div use:storyblokEditable={blok}>
 	{#each movieData as movie}
-		<img src={movie.img_poster} alt={movie.name} />
+		<a href={'/movie/' + blok.movieId}>
+			<img src={movie.img_poster} alt={movie.name} />
+		</a>
 	{/each}
 </div>
 

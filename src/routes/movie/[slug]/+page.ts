@@ -1,7 +1,6 @@
 import { supabase } from '$lib/supabaseClient.ts';
 import { error } from '@sveltejs/kit';
 
-
 export async function load({ params, data }) {
 	const supaBaseResp = await supabase.from('movie').select().eq('id', params.slug);
 
@@ -12,8 +11,8 @@ export async function load({ params, data }) {
 		});
 	}
 
-
 	return {
-		movieData: supaBaseResp.data.pop()
+		movieData: supaBaseResp.data.pop(),
+		slug: params.slug
 	};
 }

@@ -51,14 +51,19 @@
 	<title>User Management</title>
 </svelte:head>
 
-<div class="row flex-center flex">
-	<div class="col-6 form-widget">
-		<Auth
-			supabaseClient={data.supabase}
-			view="sign_in"
-			redirectTo={`${data.url}/auth/callback`}
-			showLinks={false}
-			appearance={{ theme: ThemeSupa, style: { input: 'color: #fff' } }}
-		/>
-	</div>
+<div class="register-section">
+	<Auth
+		supabaseClient={data.supabase}
+		view="sign_in"
+		redirectTo={`${data.url}/auth/callback`}
+		showLinks={false}
+		appearance={{ theme: ThemeSupa, style: { input: 'color: #fff' } }}
+	/>
 </div>
+
+<div class="register-div">
+	<a href="/register"><button>Registrera</button></a>
+</div>
+
+<style>
+</style>

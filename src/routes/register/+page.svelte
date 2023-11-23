@@ -15,71 +15,72 @@
 
 	let repetPassword: string = '';
 
-	async function registerUser(): Promise<void> {
-		if (user.password === repetPassword) {
-			try {
-				const { data, error } = await supabase.auth.signUp({
-					email: user.email,
-					password: user.password,
-					options: {
-						data: {
-							first_name: user.firstName,
-							last_name: user.lastName,
-							phone: user.phone,
-							adress: user.adress,
-							city: user.city,
-							zip: user.zip
-						}
-					}
-				});
-
-				if (error) throw error;
-				alert('Success');
-			} catch (error) {
-				if (error instanceof Error) {
-					alert(error.message);
-				}
-			}
-		} else {
-			alert('Lösenorden matchar inte!');
-		}
-	}
+	async function registerUser(): Promise<void> {}
 </script>
 
 <div>
-	<form>
-		<label for="fname">Förnamn:</label><br />
-		<input type="text" id="fname" name="fname" bind:value={user.firstName} /><br />
+	<form class="form-grid" method="POST">
+		<div>
+			<label for="fname">Förnamn:</label><br />
+			<input type="text" id="fname" name="fname" bind:value={user.firstName} />
+		</div>
 
-		<label for="lname">Efternamn:</label><br />
-		<input type="text" id="lname" name="lname" bind:value={user.lastName} /><br />
+		<div>
+			<label for="lname">Efternamn:</label><br />
+			<input type="text" id="lname" name="lname" bind:value={user.lastName} />
+		</div>
 
-		<label for="phone">Telefon:</label><br />
-		<input type="text" id="phone" name="phone" bind:value={user.phone} /><br />
+		<div>
+			<label for="phone">Telefon:</label><br />
+			<input type="text" id="phone" name="phone" bind:value={user.phone} />
+		</div>
 
-		<label for="email">Email:</label><br />
-		<input type="text" id="email" name="email" bind:value={user.email} /><br />
+		<div>
+			<label for="email">Email:</label><br />
+			<input type="text" id="email" name="email" bind:value={user.email} />
+		</div>
 
-		<label for="adress">Adress:</label><br />
-		<input type="text" id="adress" name="adress" bind:value={user.adress} /><br />
+		<div>
+			<label for="adress">Adress:</label><br />
+			<input type="text" id="address" name="address" bind:value={user.adress} />
+		</div>
 
-		<label for="city">Stad:</label><br />
-		<input type="text" id="city" name="city" bind:value={user.city} /><br />
+		<div>
+			<label for="city">Stad:</label><br />
+			<input type="text" id="city" name="city" bind:value={user.city} />
+		</div>
 
-		<label for="zip">Postnr:</label><br />
-		<input type="text" id="zip" name="zip" bind:value={user.zip} /><br />
+		<div>
+			<label for="zip">Postnr:</label><br />
+			<input type="text" id="zip" name="zip" bind:value={user.zip} />
+		</div>
 
-		<label for="zip">Lösenord:</label><br />
-		<input type="password" id="password" name="password" bind:value={user.password} /><br />
+		<div>
+			<label for="zip">Lösenord:</label>
+			<input type="password" id="password" name="password" bind:value={user.password} />
+		</div>
 
-		<label for="zip">Upreppa Lösendor:</label><br />
-		<input
-			type="password"
-			id="repet-password"
-			name="repet-password"
-			bind:value={repetPassword}
-		/><br />
+		<div>
+			<label for="zip">Upprepa Lösendordet:</label>
+			<input
+				type="password"
+				id="repet-password"
+				name="repet-password"
+				bind:value={repetPassword}
+			/><br />
 
-		<input type="submit" value="Registrera" on:click={registerUser} />
+			<input type="submit" value="Registrera" on:click={registerUser} />
+		</div>
 	</form>
 </div>
+
+<style>
+	.form-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.form-grid input[type='submit'] {
+		margin-top: 40px;
+	}
+</style>
